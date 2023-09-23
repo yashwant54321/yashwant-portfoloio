@@ -136,7 +136,6 @@ ul{
   visibility: hidden;
   }
 .menu{
-
 height: 20vw;
 margin-top: -2vw;
 width: 100%;
@@ -160,7 +159,7 @@ padding: 0;
          margin-top: 14vw;
          margin-left: 0vw;
          position: fixed;
-         z-index: 8;
+         z-index: 5;
         }
   }
   @media (min-width:577px) and (max-width:992px){
@@ -231,31 +230,33 @@ padding: 0;
       margin-top:-15vw;
     }
     #toggle:checked + div label{
-      left:21vw;    /* hamburger icon after click*/
+      left:20vw; 
+      background-color: transparent;
+      color: transparent;
+      z-index: 7;  
     }
     .hamburger-icon label:hover{
       color:black;
     }
     
     #toggle:checked + div label::after {
-    content: 'X';         /* cancel button*/
+    content: 'x';         /* cancel button*/
     font-size: 3vw;
-    color:white;
+    color:red;
     opacity: 1;
-    background:red;
-    left: -3vw;
-    top:0vw;
-    position: relative;
-   padding-left: 2.5vw;
-   padding-top: 0.5vw;
-   padding-bottom: 0.5vw;
-   padding-right: 1.5vw;
+    left: -4vw;
+    top:-5vw;
+   position: relative;
+   padding-left: 0.5vw;
+   padding-top: 0vw;
+   padding-bottom: 0vw;
+   padding-right: 0.5vw;
     }
 
 
 
     @media (min-width:576px) and (max-width:992px){
-      .hamburger-icon label{ 
+       .hamburger-icon label{ 
         width: 8vw;
         height: 8vw;
         text-align: center;
@@ -270,14 +271,13 @@ padding: 0;
       }
       #toggle:checked + div label::after {      
         font-size: 5.5vw;       
-        left: -4vw;
-        top: -1vw;
-        padding-right: 2.5vw;
+        left: -8vw;
+        top: -7vw;
         }
     }
 
  @media (max-width:575px){
-  .hamburger-icon label{ 
+ .hamburger-icon label{ 
     width: 9vw;
     height: 8vw;
     text-align: center;
@@ -287,17 +287,18 @@ padding: 0;
     top: -12vw;
     z-index: 9;
   }
-  .hamburger-icon ul{
+   .hamburger-icon ul{
     width:70%;
     position:fixed;
     height:102%;
     left:-100%;
     margin-top:-23vw;
-    z-index: 10;
+    z-index: 6;
   }
   #toggle:checked + div label{
     left:65vw;
-   color: red;
+    color: transparent;
+   transition: 0s;
   }
   #toggle:checked + div ul{
     left:0;
@@ -305,10 +306,8 @@ padding: 0;
   }
   #toggle:checked + div label::after {      
     font-size: 8vw;
-    left: -4vw;
-    top: 5vw;
-    padding-right: 4.5vw;
-    padding-left: 8vw;
+    left: -12vw;
+    top: 1vw;
     }
   }
 
@@ -628,7 +627,7 @@ box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 
 
     /* name yashwant thakur*/
-  .name{
+.name{
     width: 80%;
     height: 54vh;
     position: relative;
@@ -657,7 +656,7 @@ box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
   @media (max-width:575px){
     .name{ width: 100%;
       height: 55vh;
-      top: -2vw;
+      top: 4vw;
       text-align:center ;
      }
      .name h4{ 
@@ -720,35 +719,35 @@ span.typed-cursor {
   flex-wrap: wrap;
   width: 80%;
   position: relative;
-  top: 3vw;
+  top: 4vw;
   left:5vw ;
-
 }
 .icon-items{
   width: 18%;
   height: 3vw;
   text-align: center;
-  font-size: calc(1vw + 0.5rem);
+  font-size: calc(1.5vw + 0.5rem);
 }
 
 
 @media (min-width:576px) and (max-width:992px){
-  .social-icons{ 
-    top: 4vw;
+   .social-icons{ 
+    top: 5vw;
     left:9vw ;
+  }
+  .icon-items{
+    font-size: calc(2.5vw + 0.5rem);
   }
 }
 @media (max-width:575px){
  .social-icons{ 
-  top: 12vw;
+  top: 13vw;
   left:21vw ;
   }
   .icon-items{ 
    height: 5vw;
+   font-size:7vw ;
     } 
-    .icon-items i{
-      font-size:5vw ;
-    }
 } 
 
 
@@ -1001,8 +1000,8 @@ height: 100%;
 display: block;
 }
 .skills-row{
- margin-left: -2vw;
-  width: 106%;
+margin-left: -2vw;
+width: 106%;
 padding: 2vw 1vw 2vw 0vw;
 }
 }
@@ -1031,7 +1030,7 @@ padding: 2vw 1vw 2vw 0vw;
 
  /* progress bar*/
 .progress-color{
-  background-color: #f1ff00;
+  background-color: gainsboro;
 }
 
 
